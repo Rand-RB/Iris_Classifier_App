@@ -14,9 +14,9 @@ import pandas as pd
 km = pickle.load(open('Kmeans_Classifier.pkl', 'rb'))
 
 #load the imges
-setosa= Image.open('setosa.png')
-versicolor= Image.open('versicolor.png')
-virginica = Image.open('virginica.png')
+setosa= Image.open('setosa.jpg')
+versicolor= Image.open('versicolor.jpg')
+virginica = Image.open('virginica.jpg')
 
 
 st.write("""
