@@ -45,7 +45,12 @@ user_input = user_input()
 if st.button("Click Here to Predict"):
     pred = km.predict(user_input)
     
-st.image(setosa) if pred == 0 else st.image(versicolor)  if pred == 1 else st.image(virginica)
+
+if pred == 0:
+         st.image(setosa)
+else if(pred == 1):
+         st.image(versicolor) 
+else st.image(virginica)
 
 
 #print the user input
