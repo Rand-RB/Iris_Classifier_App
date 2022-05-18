@@ -47,12 +47,19 @@ if st.button("Click Here to Predict"):
          pred = km.predict(user_input)
          if pred == 0:
                   st.image(setosa)
+                  st.title('This is Setosa')
+                  st.markdown('<style>h1{color: blue;}</style>', unsafe_allow_html=True)
          elif(pred == 1):
                   st.image(versicolor) 
+                  st.title('This is Versicolora')
+                  st.markdown('<style>h1{color: blue;}</style>', unsafe_allow_html=True)
          else:
                   st.image(virginica)
+                  st.title('This is Virginica')
+                  st.markdown('<style>h1{color: blue;}</style>', unsafe_allow_html=True)
+         #print the user input
+         st.subheader("User Input")
+         st.write(user_input)
 
 
-#print the user input
-st.subheader("User Input")
-st.write(user_input)
+
