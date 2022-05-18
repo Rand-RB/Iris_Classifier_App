@@ -50,17 +50,10 @@ if pred == 0:
          st.image(setosa)
 elif(pred == 1):
          st.image(versicolor) 
-else st.image(virginica)
+else:
+         st.image(virginica)
 
 
 #print the user input
 st.subheader("User Input")
 st.write(user_input)
-
-
-
-
-
-
-#read the model 
-load_model = pickle.load(open('myModel2.pkl', 'rb'))
