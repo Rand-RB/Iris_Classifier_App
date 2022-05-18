@@ -43,7 +43,7 @@ def user_input():
 user_input = user_input() 
 
 if st.button("Click Here to Predict"):
-          pred = km.predict(user_input)
+         pred = km.predict(user_input)
          if pred == 0:
                   st.image(setosa)
          elif(pred == 1):
