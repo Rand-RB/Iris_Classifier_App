@@ -48,7 +48,7 @@ if st.button("Click Here to Predict"):
 
 if pred == 0:
          st.image(setosa)
-else if(pred == 1):
+elif(pred == 1):
          st.image(versicolor) 
 else st.image(virginica)
 
