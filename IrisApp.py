@@ -10,8 +10,7 @@ import pickle
 from PIL import Image
 import pandas as pd
 
-#load the model
-km = pickle.load(open('Kmeans_Classifier.pkl', 'rb'))
+
 
 #load the imges
 setosa= Image.open('setosa.jpg')
@@ -22,7 +21,7 @@ virginica = Image.open('virginica.jpg')
 st.write("""
          # IRIS Classificatin App
          
-### Let's Predict the Flowers Type Based on Some Features by Using Machine Learning
+### Let's Predict the Flowers Type Based on Some Features by Using Machine Learning🤖😁
          
          """)
          
@@ -37,9 +36,12 @@ def user_input():
     features = {"sepal_length": sep_l, "sepal_width":sep_w,
                 "petal_length":pet_l, "petal_width":pet_w}
     data = pd.DataFrame(features, index=[0])
-    return features
+    return data
 
 user_input = user_input() 
+
+#load the model
+km = pickle.load(open('Kmeans_Classifier.pkl', 'rb'))
 
 if st.button("Click Here to Predict"):
          pred = km.predict(user_input)
