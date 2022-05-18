@@ -37,7 +37,7 @@ def user_input():
     features = {"sepal_length": sep_l, "sepal_width":sep_w,
                 "petal_length":pet_l, "petal_width":pet_w}
     data = pd.DataFrame(features, index=[0])
-    return data
+    return features
 
 user_input = user_input() 
 
